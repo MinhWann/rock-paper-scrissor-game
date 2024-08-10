@@ -4,9 +4,9 @@ function ChoiceCard({ gameItem, handleGameItemChange }) {
   const { url, name } = gameItem;
   return (
     <img
-      onClick={() => {
-        "Your code here";
-      }}
+      onClick={() => 
+        handleGameItemChange(gameItem)
+      }
       className="choice"
       src={url}
       alt={name}
